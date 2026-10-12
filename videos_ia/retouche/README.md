@@ -2,8 +2,8 @@
 
 Scripts utilisés pour corriger la pub (vidéo 480x854, 24 i/s, 27,33 s).
 
-1. `voix_sans_embouts.py` : remplace « en métal » par « sans embouts » (8,45 s → 9,01 s) en réutilisant
-   la voix du narrateur (« **sans** lui » + « des‿**embouts** »), intonation recalée avec Praat (PSOLA).
+1. `voix_sans_embouts.py` : remplace « en métal » par « sans embouts » (8,45 s → 9,02 s) par simple collage des sons
+   du narrateur (« **sans** lui » + « des‿**embouts** »), sans retouche de hauteur ni de durée.
    Le reste de la bande son est inchangé, à l'échantillon près.
 2. `fix_caption.py` : remplace le sous-titre « EN MÉTAL » par « SANS EMBOUTS » (frames 205 à 215).
    Police retrouvée : Inter Bold, contour (17,17,17), blanc (253,253,248), bleu actif (83,171,246).
