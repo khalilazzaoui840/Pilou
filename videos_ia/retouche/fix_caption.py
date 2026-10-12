@@ -8,7 +8,7 @@ from PIL import Image
 ED=os.environ.get('PILOU_WORK','travail')+'/edit/'
 OUT=ED+'cap_fixed/'; os.makedirs(OUT,exist_ok=True)
 SCALE={205:0.927,206:0.971}
-ACTIVE_SWITCH=208   # EMBOUTS surligné à partir de cette frame (début du /z/ à 8.608 s)
+ACTIVE_SWITCH=207   # EMBOUTS surligné à partir de cette frame (début du /z/ à 8,58 s)
 def soften(a,s=0.45): return ndi.gaussian_filter(a,s)
 for i in range(205,216):
     a=np.asarray(Image.open(ED+f'full/{i:04d}.png').convert('RGB')).copy()
