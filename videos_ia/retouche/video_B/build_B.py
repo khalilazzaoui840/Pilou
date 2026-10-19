@@ -1,11 +1,11 @@
 """Assemble la vidéo B : plans nettoyés de A recalés sur la nouvelle voix, nouveaux sous-titres, audio B."""
 import numpy as np, sys, os, subprocess, glob, shutil
 from PIL import Image
-sys.path.insert(0,'/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/tools')
+sys.path.insert(0,__import__('os').environ.get('PILOU_WORK','travail')+'/tools')
 import yuv
 from timeline import SHOTS, CUTS, FPS, TOTAL
 import captions_B as CB
-VB='/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/videoB/'
+VB=__import__('os').environ.get('PILOU_WORK','travail')+'/videoB/'
 SRC=os.environ.get('SRC','A_clean')
 def motion(a,b):
     prev=None; m=[]
@@ -34,7 +34,7 @@ def plan():
             m=motion(a,b); idir=interp_dir(name,a,b)
             chosen=[]
             for k in np.argsort(m,kind='stable'):     # les passages où l'image bouge le moins
-                if all(abs(k-c)>=2 for c in chosen): chosen.append(k)
+                if m[k]>=0.3 and all(abs(k-c)>=2 for c in chosen): chosen.append(k)
                 if len(chosen)==extra: break
             assert len(chosen)==extra,(name,extra)
             ins={k:(idir+f'{2*k+2:05d}.png' if m[k]>=0.3 and os.path.exists(idir+f'{2*k+2:05d}.png') else seq[k]) for k in chosen}

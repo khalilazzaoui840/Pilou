@@ -1,6 +1,6 @@
 """Sous-titres de la vidéo B, image par image, au style de la vidéo A (blanc + mot actif doré)."""
 import numpy as np, sys
-sys.path.insert(0,'/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/tools')
+sys.path.insert(0,__import__('os').environ.get('PILOU_WORK','travail')+'/tools')
 import caption as C
 from timeline import P2, CUTS, SHOTS, FPS, TOTAL
 from words import GROUPS
@@ -16,7 +16,7 @@ def windows():
             start=g[0][1]-0.04
             end=(gl[gi+1][0][1]-0.04) if gi+1<len(gl) else b+0.10
             ev.append(dict(words=[w for w,_ in g],onsets=[t for _,t in g],start=start,end=end))
-    for e,n in zip(ev,ev[1:]): e['end']=min(e['end'],n['start'])
+    for e,n in zip(ev,ev[1:]): e['end']=n['start']        # pas de trou : le groupe reste jusqu'au suivant
     ev[-1]['end']=TOTAL                       # « EN DESSOUS ! » reste jusqu'à la fin
     return ev
 EV=windows()

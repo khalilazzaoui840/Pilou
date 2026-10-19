@@ -1,29 +1,32 @@
 """Efface les anciens sous-titres de la vidéo A (plans S3 à S10) avec ProPainter, sur une bande autour du texte."""
 import numpy as np, json, os, sys, subprocess, shutil
-sys.path.insert(0,'/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/tools')
+sys.path.insert(0,__import__('os').environ.get('PILOU_WORK','travail')+'/tools')
 import caption as C
 from PIL import Image
 from scipy import ndimage as ndi
 from timeline import SHOTS
-VB='/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/videoB/'
-PP='/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/ext/pp/src'
-PY='/tmp/claude-0/-home-user-Pilou/a4115cab-5bdb-5d46-9461-6f6c68378b97/scratchpad/venv/bin/python'
+VB=__import__('os').environ.get('PILOU_WORK','travail')+'/videoB/'
+PP=__import__('os').environ.get('PILOU_WORK','travail')+'/ext/pp/src'
+PY=__import__('os').environ.get('PILOU_WORK','travail')+'/venv/bin/python'
 TL=json.load(open(VB+'captA_timeline.json'))
 MIN_SCORE=float(os.environ.get('MIN_SCORE','2.0'))
+GOLD=np.array([201,138,76.])
 def mask_for(i):
+    """masque du sous-titre de la vidéo A sur la frame i (None s'il n'y a pas de sous-titre)"""
     r=TL[str(i)]
     aF,aB,aS=C.render(r['words'],r['active'],dict(cx=240+r['dx'],base=577+r['dy'],anchor_y=595+r['dy'],gap=0.26,tracking=0.01),r['scale'])
-    m=ndi.binary_dilation(np.maximum(aS,aF)>0.03,iterations=2)
-    if r['score']<MIN_SCORE:
-        # repérage incertain : on prend aussi tout ce qui ressemble à du texte (blanc / doré + contour) dans la bande
-        a=np.asarray(Image.open(VB+f'A_full/{i:04d}.png').convert('RGB')).astype(int)
-        y0=530 if r['dy']<30 else 592
-        txt=(a.min(2)>225)|(np.abs(a-np.array([201,138,76])).max(2)<30)
-        band=np.zeros_like(txt); band[y0:y0+60,60:420]=True
-        txt&=band
-        dark=(a.mean(2)<55)&ndi.binary_dilation(txt,iterations=5)
-        m=ndi.binary_dilation(m|txt|dark,iterations=4)
-    return m,r
+    a=np.asarray(Image.open(VB+f'A_full/{i:04d}.png').convert('RGB')).astype(float)
+    F=aF>0.6; B=aB>0.6; W=F&~B; K=(aS>0.6)&~(aF>0.2)
+    f=lambda m,o: o[m].mean() if m.sum() else 0.0
+    w=f(W,a.min(2)>225); g=f(B,np.abs(a-GOLD).max(2)<38); k=f(K,a.mean(2)<55)
+    r=dict(r,terms=(round(w,2),round(g,2),round(k,2)))
+    sc=TL[str(i)]['score']
+    near=lambda j: str(j) in TL and TL[str(j)]['score']>=1.6
+    if sc>=2.05: it=3
+    elif sc>=1.6: it=6
+    elif sc>=0.95 and (near(i-1) or near(i+1)): it=6     # image d'apparition/disparition : masque élargi
+    else: return None,r                                    # pas de sous-titre (pause)
+    return ndi.binary_dilation(np.maximum(aS,aF)>0.03,iterations=it),r
 def run(shot):
     name,a,b=[s for s in SHOTS if s[0]==shot][0]
     ms={i:mask_for(i) for i in range(a,b+1)}
