@@ -1,9 +1,8 @@
 """Rendu des sous-titres au style de la vidéo (Inter Bold, contour sombre, mot actif en bleu)."""
-import os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as ndi
-FONT=os.environ.get('PILOU_WORK','travail')+'/fonts/Inter-Bold.ttf'
+FONT=__import__('os').environ.get('PILOU_WORK','travail')+'/fonts/Inter-Bold.ttf'
 SS=4
 WHITE=np.array([253,253,248.]); BLUE=np.array([83,171,246.]); STROKE=np.array([17,17,17.])
 P=dict(size=41.75, gap=0.26, base=577.0, cx=240.0, stroke=4.4, stroke_alpha=1.0, tracking=0.0, anchor_y=595.0)
@@ -50,16 +49,15 @@ def render(words,active,p=None,scale=1.0,H=854,W=480):
     S=np.clip(r+0.5*SS-dist,0,SS)/SS*p['stroke_alpha']
     # rééchantillonnage vers la grille vidéo
     def down(a):
-        x0=ox; y0=oy
-        ix=int(np.floor(x0)); iy=int(np.floor(y0))
-        # décale au sous-pixel près
-        sh=ndi.shift(a,(y0-iy*1.0- (y0-iy) + (y0-np.floor(y0)) - (y0-np.floor(y0)),0),order=1) if False else a
-        # positionner sur une grille SS-alignée
-        offx=int(round(x0)); offy=int(round(y0))
-        big=np.zeros((H*SS,W*SS))
-        ys,xs=slice(max(0,offy),min(H*SS,offy+a.shape[0])),slice(max(0,offx),min(W*SS,offx+a.shape[1]))
-        big[ys,xs]=a[ys.start-offy:ys.stop-offy, xs.start-offx:xs.stop-offx]
-        return big.reshape(H,SS,W,SS).mean((1,3))
+        offx=int(round(ox)); offy=int(round(oy))
+        px=offx%SS; py=offy%SS
+        a2=np.pad(a,((py,(-(a.shape[0]+py))%SS),(px,(-(a.shape[1]+px))%SS)))
+        hb,wb=a2.shape[0]//SS,a2.shape[1]//SS
+        small=a2.reshape(hb,SS,wb,SS).mean((1,3))
+        out=np.zeros((H,W)); y0=(offy-py)//SS; x0=(offx-px)//SS
+        ys,xs,ye,xe=max(0,y0),max(0,x0),min(H,y0+hb),min(W,x0+wb)
+        if ye>ys and xe>xs: out[ys:ye,xs:xe]=small[ys-y0:ye-y0,xs-x0:xe-x0]
+        return out
     aF=down(F); aB=down(B); aS=down(S)
     return aF,aB,aS
 def composite(frame,words,active,p=None,scale=1.0):

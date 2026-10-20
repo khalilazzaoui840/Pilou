@@ -157,4 +157,42 @@ if __name__=='__main__':
         print('coupes',[round(c,2) for c in CUTS]); print('fin voix',round(P2[-1][1],2))
         for (n,a,b),c0,c1 in zip(SHOTS,CUTS[:-1],CUTS[1:]): print(f'{n}: besoin {(c1-c0)*FPS-HOLD.get(n,0):5.1f} images, dispo {b-a+1}, vitesse {(b-a+1)/((c1-c0)*FPS-HOLD.get(n,0)):.2f}x')
         for e in EV: print(f"  {e['start']:6.2f}-{e['end']:6.2f} {' '.join(e['words'])}")
-    else: build()
+    elif len(sys.argv)==1: build()
+
+# ---------- versions Meta : 1080x1920 (Stories/Reels) et 1080x1350 (4:5, fil) ----------
+from PIL import ImageFilter
+K=1080/480; HW,HH=1080,1920; FEED_Y0=(HH-1350)//2
+def draw_hd(frame,c):
+    if c is None: return frame
+    p=dict(cx=239*K,base=(577+c['dy'])*K,anchor_y=(595+c['dy'])*K,size=C.P['size']*K,stroke=C.P['stroke']*K,**STYLE)
+    aF,aB,aS=C.render(c['words'],c['active'],p,c['scale'],HH,HW)
+    aF,aB,aS=ndi.gaussian_filter(aF,0.45*K),ndi.gaussian_filter(aB,0.45*K),ndi.gaussian_filter(aS,0.6*K)
+    out=frame.astype(float)*(1-aS[...,None])+C.STROKE*aS[...,None]
+    t=np.clip(aB/np.maximum(aF,1e-6),0,1)[...,None]
+    out=out*(1-aF[...,None])+(WHITE*(1-t)+GOLD*t)*aF[...,None]
+    return np.clip(np.round(out),0,255).astype(np.uint8)
+def write_yuv(fh,im):
+    Y,U,V=yuv.rgb2yuv(im); h,w=Y.shape
+    fh.write(np.clip(np.round(Y),0,255).astype(np.uint8).tobytes())
+    fh.write(np.clip(np.round(U.reshape(h//2,2,w//2,2).mean((1,3))),0,255).astype(np.uint8).tobytes())
+    fh.write(np.clip(np.round(V.reshape(h//2,2,w//2,2).mean((1,3))),0,255).astype(np.uint8).tobytes())
+def encode(raw,size,out):
+    subprocess.run(['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','yuv420p','-s',size,'-r','24','-i',raw,
+        '-i',MP3,'-map','0:v','-map','1:a','-c:v','libx264','-preset','slow','-crf','16','-profile:v','high','-level','4.1',
+        '-pix_fmt','yuv420p','-colorspace','smpte170m','-color_primaries','bt709','-color_trc','bt709','-color_range','tv',
+        '-c:a','copy','-movflags','+faststart',out],check=True)
+def build_hd():
+    frames=plan(); base=OUT.replace('_v3.mp4','').replace('.mp4','')
+    r916=open(HERE+'/hd916.yuv','wb'); r45=open(HERE+'/hd45.yuv','wb')
+    sharpen=ImageFilter.UnsharpMask(radius=1.6,percent=45,threshold=2)
+    for j,p in enumerate(frames):
+        im=Image.open(p).convert('RGB').resize((HW,HH),Image.LANCZOS).filter(sharpen)
+        im=draw_hd(np.asarray(im),caption_at(j))
+        write_yuv(r916,im); write_yuv(r45,im[FEED_Y0:FEED_Y0+1350])
+        if j==300: Image.fromarray(im).save(HERE+'/hd_check.png')
+    r916.close(); r45.close()
+    encode(HERE+'/hd916.yuv','1080x1920',HERE+f'/{base}_1080x1920.mp4')
+    encode(HERE+'/hd45.yuv','1080x1350',HERE+f'/{base}_1080x1350_4-5.mp4')
+    os.remove(HERE+'/hd916.yuv'); os.remove(HERE+'/hd45.yuv')
+    print('ok HD ->',base)
+if __name__=='__main__' and len(sys.argv)>1 and sys.argv[1]=='hd': build_hd()
