@@ -7,10 +7,15 @@ HERE=os.getcwd(); sys.path.insert(0,HERE)
 SCR=__import__('os').environ.get('PILOU_WORK','travail')+'/'
 sys.path.insert(0,SCR+'tools')
 import caption as C, yuv
-from words import VO, PHRASES, GROUPS, EXTRA, SHOTS, CUTMARKS, OUT
+from words import VO, MP3, PHRASES, GROUPS, EXTRA, SHOTS, CUTMARKS, OUT
+try: from words import HOLD
+except ImportError: HOLD={}
 VB=SCR+'videoB/'                 # images de la vidéo A : A_full (brutes), A_clean (sous-titres effacés)
 SRC=VB+'A_clean/'
-TOTAL=25.0; FPS=24
+FPS=24
+import math
+_w=wave.open(VO); TOTAL=_w.getnframes()/_w.getframerate(); _w.close()   # la vidéo dure exactement comme la voix
+NFR=math.ceil(TOTAL*FPS)
 GOLD=np.array([201,138,76.]); WHITE=np.array([255,254,254.])
 BASE_SCALE=0.97; POP=[0.89,0.93]; STYLE=dict(gap=0.26,tracking=0.01)      # mesurés sur la vidéo A
 # ---------- minutage ----------
@@ -95,7 +100,8 @@ def interp_dir(shot,a,b):
 def plan():
     frames=[]
     for (name,a,b),c0,c1 in zip(SHOTS,CUTS[:-1],CUTS[1:]):
-        n_out=int(round(c1*FPS))-int(round(c0*FPS)); have=b-a+1; extra=n_out-have
+        n_all=(NFR if c1>=TOTAL else int(round(c1*FPS)))-int(round(c0*FPS)); hold=HOLD.get(name,0); n_out=n_all-hold
+        have=b-a+1; extra=n_out-have
         seq=[SRC+f'{i:04d}.png' for i in range(a,b+1)]
         if extra<0: seq=seq[:n_out]
         elif extra>0:
@@ -110,12 +116,24 @@ def plan():
                 out.append(p)
                 if k in ins: out.append(ins[k])
             seq=out
+        if hold:      # plan final : dernière image avec un léger zoom avant progressif
+            hd=HERE+f'/hold_{name}/'; os.makedirs(hd,exist_ok=True)
+            last=Image.open(seq[-1]).convert('RGB'); W,H=last.size
+            for h in range(hold):
+                z=1+0.03*(h+1)/hold; w2,h2=W/z,H/z; box=((W-w2)/2,(H-h2)/2,(W+w2)/2,(H+h2)/2)
+                last.resize((W,H),Image.LANCZOS,box=box).save(hd+f'{h:03d}.png'); seq.append(hd+f'{h:03d}.png')
         frames+=seq
-        print(f'{name}: {c0:5.2f}-{c1:5.2f} s, {n_out} images' + (f', {extra} ajoutées' if extra>0 else f', {-extra} coupées' if extra<0 else ''))
-    assert len(frames)==int(round(TOTAL*FPS))
+        print(f'{name}: {c0:5.2f}-{c1:5.2f} s, {n_all} images' + (f' dont {hold} de plan final' if hold else '') + (f', {extra} ajoutées' if extra>0 else f', {-extra} coupées' if extra<0 else ''))
+    assert len(frames)==NFR,(len(frames),NFR)
     return frames
+def build_audio_raw():
+    """voix fournie utilisée telle quelle : aucun traitement, aucune pause ajoutée ; seulement du silence numérique après la fin"""
+    w=wave.open(VO); sr=w.getframerate(); x=np.frombuffer(w.readframes(w.getnframes()),np.int16).copy(); w.close()
+    n=int(round(TOTAL*sr)); assert len(x)<=n
+    x=np.concatenate([x,np.zeros(n-len(x),np.int16)])
+    w=wave.open(HERE+'/vo_proc.wav','wb'); w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(x.tobytes()); w.close()
+    print('audio : voix d origine telle quelle,',round(len(x)/sr,2),'s')
 def build():
-    build_audio()
     frames=plan()
     out=HERE+'/frames/'; shutil.rmtree(out,ignore_errors=True); os.makedirs(out)
     raw=open(HERE+'/v.yuv','wb')
@@ -128,15 +146,15 @@ def build():
         raw.write(np.clip(np.round(V.reshape(427,2,240,2).mean((1,3))),0,255).astype(np.uint8).tobytes())
     raw.close()
     subprocess.run(['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','yuv420p','-s','480x854','-r','24','-i',HERE+'/v.yuv',
-        '-i',HERE+'/vo_proc.wav','-map','0:v','-map','1:a','-c:v','libx264','-preset','slow','-crf','14','-profile:v','high',
+        '-i',MP3,'-map','0:v','-map','1:a','-c:v','libx264','-preset','slow','-crf','14','-profile:v','high',
         '-pix_fmt','yuv420p','-colorspace','smpte170m','-color_primaries','bt709','-color_trc','bt709','-color_range','tv',
-        '-c:a','aac','-b:a','192k','-ar','44100','-ac','2','-movflags','+faststart','-t',str(TOTAL),HERE+'/'+OUT],check=True)
+        '-c:a','copy','-movflags','+faststart',HERE+'/'+OUT],check=True)
     os.remove(HERE+'/v.yuv')
     json.dump([dict(words=e['words'],start=round(e['start'],2),end=round(e['end'],2)) for e in EV],open(HERE+'/captions.json','w'),ensure_ascii=False,indent=0)
     print('ok ->',OUT)
 if __name__=='__main__':
     if len(sys.argv)>1 and sys.argv[1]=='plan':
         print('coupes',[round(c,2) for c in CUTS]); print('fin voix',round(P2[-1][1],2))
-        for (n,a,b),c0,c1 in zip(SHOTS,CUTS[:-1],CUTS[1:]): print(f'{n}: besoin {(c1-c0)*FPS:5.1f} images, dispo {b-a+1}, vitesse {(b-a+1)/((c1-c0)*FPS):.2f}x')
+        for (n,a,b),c0,c1 in zip(SHOTS,CUTS[:-1],CUTS[1:]): print(f'{n}: besoin {(c1-c0)*FPS-HOLD.get(n,0):5.1f} images, dispo {b-a+1}, vitesse {(b-a+1)/((c1-c0)*FPS-HOLD.get(n,0)):.2f}x')
         for e in EV: print(f"  {e['start']:6.2f}-{e['end']:6.2f} {' '.join(e['words'])}")
     else: build()

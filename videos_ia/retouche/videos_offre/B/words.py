@@ -1,4 +1,5 @@
 # Vidéo B (PILOU_video_B) — voix audio_pilou_video_b.mp3 (23,56 s)
+MP3=__import__('os').environ.get('PILOU_WORK','travail')+'/d2f94b8d-audio_pilou_video_b.mp3'   # audio d'origine, copié tel quel
 VO=__import__('os').environ.get('PILOU_WORK','travail')+'/v3/vo_B.wav'
 PHRASES=[
  (0.04,2.05,[("TON",0.04),("CHIEN",0.25),("S'ENFUIT",0.44),("DÈS",0.97),("QUE",1.09),("TU",1.18),("SORS",1.36),("LA",1.50),("BROSSE ?",1.60)]),
@@ -23,7 +24,7 @@ GROUPS=[[["TON","CHIEN"],["S'ENFUIT"],["DÈS","QUE","TU"],["SORS","LA","BROSSE ?
  [["ET","UN","CHIEN"],["ENFIN","DÉTENDU"],["QUI","ADORE","ÇA"]],
  [["PROFITE","DE","L'OFFRE"],["UNE","BROSSE","PILOU"],["ACHETÉE"],["UNE","OFFERTE !"]],
  [["CLIQUE","JUSTE"],["EN","DESSOUS"],["POUR","EN","PROFITER !"]]]
-EXTRA=[0.15,0.10,0.20,0.15,0.20,0.15,0.15,0.20,0.10,0.0]
+EXTRA=[0.0]*len(PHRASES)    # la voix est utilisée telle quelle, sans pause ajoutée
 SHOTS=[('S3',115,169),('S4',170,253),('S5',254,336),('S6',337,407),('S7',408,479),('S8',480,544),('S9',545,576),('S10',577,656)]
 CUTMARKS=[(1,0,0.22),(3,0,0.22),(4,5,0.08),(5,0,0.20),(7,0,0.15),(8,0,0.18),(8,3,0.06)]
-OUT='PILOU_video_B_offre.mp4'
+OUT='PILOU_video_B_offre_v3.mp4'

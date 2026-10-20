@@ -1,4 +1,5 @@
 # Vidéo A (PILOU_video_modifiee) — voix audio_pilou_video_modifiee.mp3 (24,69 s)
+MP3=__import__('os').environ.get('PILOU_WORK','travail')+'/021ff0e1-audio_pilou_video_modifiee.mp3'   # audio d'origine, copié tel quel
 VO=__import__('os').environ.get('PILOU_WORK','travail')+'/v3/vo_A.wav'
 PHRASES=[
  (0.04,1.60,[("TON",0.04),("CHIEN",0.28),("PERD",0.52),("SES",0.67),("POILS",0.85),("PARTOUT ?",1.06)]),
@@ -25,8 +26,8 @@ GROUPS=[[["TON","CHIEN"],["PERD","SES","POILS"],["PARTOUT ?"]],
  [["ET","UN","CHIEN"],["ENFIN","DÉTENDU"],["QUI","ADORE","ÇA"]],
  [["PROFITE","DE","L'OFFRE"],["UNE","BROSSE","PILOU"],["ACHETÉE"],["UNE","OFFERTE !"]],
  [["FONCE !"],["LIEN","EN","BIO !"]]]
-EXTRA=[0.10,0.0,0.0,0.10,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+EXTRA=[0.0]*len(PHRASES)    # la voix est utilisée telle quelle, sans pause ajoutée
 # plans de la vidéo A d'origine (frames 1-based) et repères de coupe (phrase, mot, avance en s)
 SHOTS=[('S1',1,67),('S3',115,169),('S4',170,253),('S5',254,336),('S6',337,407),('S7',408,479),('S8',480,544),('S9',545,576),('S10',577,656)]
 CUTMARKS=[(1,0,0.20),(2,0,0.22),(4,0,0.22),(5,5,0.08),(6,0,0.20),(8,0,0.15),(9,0,0.18),(9,3,0.06)]
-OUT='PILOU_video_A_offre.mp4'
+OUT='PILOU_video_A_offre_v3.mp4'
