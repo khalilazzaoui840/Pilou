@@ -24,6 +24,7 @@ def mask_for(i):
     near=lambda j: str(j) in TL and TL[str(j)]['score']>=1.6
     if sc>=2.05: it=3
     elif sc>=1.6: it=6
+    elif k>=0.7 and g>=0.6: it=6                         # mot(s) entièrement doré(s) (« PARTOUT ? », « FONCE ! »)
     elif sc>=0.95 and (near(i-1) or near(i+1)): it=6     # image d'apparition/disparition : masque élargi
     else: return None,r                                    # pas de sous-titre (pause)
     return ndi.binary_dilation(np.maximum(aS,aF)>0.03,iterations=it),r
