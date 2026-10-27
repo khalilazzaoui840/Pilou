@@ -50,7 +50,7 @@ PetLab Co. revendique plus de 200 M$ de CA annuel, mais **uniquement sur une pag
 | Nutramax (Cosequin/Dasuquin), référence historique | Articulations | **Non vérifié** (quota de recherche épuisé) | — |
 | Dr. Marty | (surtout de l'alimentation) | **Non vérifié** (quota de recherche épuisé) | — |
 | Treatsy (présent en France) | « Daily Defence Glandes-Anales » | 22,99 € les 30 bouchées sur la marketplace Zooplus.fr ; [REVIEWS] 13 avis (date de page non déterminée, vue le 2026-10-27) | [Zooplus.fr](https://www.zooplus.fr/shop/chiens/complements_alimentaires_chien/hypoallergenique/9980061008) |
-| Omni (UK, page en français) | « Omni Rescue » glandes anales (végétal) | Fiche produit en français (psyllium, graines de courge, pectine de pomme) | [omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal) |
+| Omni (UK, page en français) | « Omni Rescue » glandes anales (végétal) | Fiche produit en français (psyllium, graines de citrouille, pectine de pomme) | [omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal) |
 
 **Détails par marque**
 
@@ -91,7 +91,7 @@ PetLab Co. revendique plus de 200 M$ de CA annuel, mais **uniquement sur une pag
   - lancement national chez Petco ([Pets+](https://petsplusmag.com/dog-supplement-brand-wuffes-launches-nationwide-at-petco/amp/)).
   - Les dates exactes des communiqués n'ont pas été extraites (2025 probable).
 - CA non confirmé.
-- Contexte Inc. 5000 2025 : le classement repose sur la croissance du CA entre 2021 et 2024. La croissance médiane sur 3 ans du top 500 est de **1 552 %** selon [Newswire (Jiffy Junk)](https://www.newswire.com/news/jiffy-junk-franchising-ranks-no-2328-on-the-2025-inc-5000-list-of-americas) ; un autre communiqué cite 1 507 % ([Transflo](https://am590theanswer.com/business/transflo-makes-the-2025-inc-5000-list-of-americas-fastest-growing-private-compan/4d0825162828438a889ff28286f92de4)).
+- Contexte Inc. 5000 2025 : le classement repose sur la croissance du CA entre 2021 et 2024. La croissance médiane sur 3 ans du top 500 est de **1 552 %** selon les communiqués de lauréats, par exemple [Newswire (Jiffy Junk)](https://www.newswire.com/news/jiffy-junk-franchising-ranks-no-2328-on-the-2025-inc-5000-list-of-americas) ; un autre communiqué cite 1 507 % ([Transflo](https://am590theanswer.com/business/transflo-makes-the-2025-inc-5000-list-of-americas-fastest-growing-private-compan/4d0825162828438a889ff28286f92de4)).
 
 *Native Pet*
 - [FUNDING] Série A de **6 M$** menée par CAVU ([Petfood Industry](https://www.petfoodindustry.com/news-newsletters/pet-food-press-releases/press-release/15468722/native-pet-scoops-up-us-6-million-in-series-a-funding), mars 2022, historique).
@@ -217,7 +217,7 @@ Avertissement : les points 1 à 5 résument des textes officiels **non re-consul
   - Les contrôles vétérinaires se font au **poste de contrôle frontalier**, selon le [Règlement (UE) 2017/625](https://eur-lex.europa.eu/eli/reg/2017/625/oj).
 - **Droit de rétractation** : [Directive 2011/83/UE, article 16, point e)](https://eur-lex.europa.eu/eli/dir/2011/83/oj). Il prévoit une exception pour les biens scellés qui ne peuvent pas être renvoyés pour des raisons de protection de la santé ou d'hygiène une fois descellés. C'est utile pour limiter les retours de pots ouverts ; la transposition française est l'article L221-28 du Code de la consommation, à vérifier.
 - **Formulations déjà employées en France (constat, pas validation juridique).** Sur Zooplus.fr, la fiche Treatsy décrit des fibres insolubles, des prébiotiques et de la pectine censés « faciliter la vidange naturelle des glandes et le confort intestinal ». Elle affiche aussi « formulé par des vétérinaires nutritionnistes » et « recommandé par des centaines de vétérinaires en Europe » (allégation non vérifiée). Source : [Zooplus.fr](https://www.zooplus.fr/shop/chiens/complements_alimentaires_chien/hypoallergenique/9980061008).
-- **Composition d'un concurrent végétal.** Omni Rescue associe psyllium, graines de courge et pectine de pomme, sans ingrédient d'origine animale : [omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal).
+- **Composition d'un concurrent végétal.** Omni Rescue associe psyllium, graines de citrouille et pectine de pomme, sans ingrédient d'origine animale : [omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal).
 
 ### Inferences
 - **Ligne rouge des allégations** (exemples, à faire valider par un spécialiste du droit de l'alimentation animale) :
@@ -356,7 +356,7 @@ Les candidats 2 et 3 restent **non évalués côté saturation France**.
   - Reddit et TikTok : non vérifiés.
   - Forums français chien.com (plusieurs fils) et contenus SantéVet et Hundeo sur le sujet : voir section 4.
 - **Plaintes récurrentes** : palatabilité, écarts de comptage (26 au lieu de 30), délai de 3 à 5 semaines ([ShopSavvy](https://shopsavvy.com/reviews-tldr/glandex-anal-gland-chews-for-dogs) ; [desertcart](https://www.desertcart.com.cy/products/16619345-vetnique-glandex-anal-gland-soft-chew-treats-with-pumpkin-dogs)).
-- **Sourcing** : aucune donnée collectée sur les façonniers européens. Les concurrents utilisent des fibres simples : psyllium, graines de courge, pectine de pomme chez Omni ([omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal)) ; pulpe de betterave, psyllium et citrouille chez NaturVet.
+- **Sourcing** : aucune donnée collectée sur les façonniers européens. Les concurrents utilisent des fibres simples : psyllium, graines de citrouille, pectine de pomme chez Omni ([omni.pet/fr](https://omni.pet/fr/products/omni-rescue-supplement-glandes-anal)) ; pulpe de betterave, psyllium et citrouille chez NaturVet.
 - **Vérification France** : 4 requêtes, 2 concurrents directs visibles (Treatsy, Omni), prix observé de 22,99 € les 30 bouchées, 13 avis. Publicités françaises non vérifiées. **Verdict non concluant, indices orientés sous-exploité** (détail en section 4).
 - **Réglementation** : fibres et prébiotiques relèvent a priori des matières premières. Allégations fonctionnelles possibles sur le transit, les selles et la vidange naturelle ; interdites sur l'engorgement, l'infection ou l'abcès. Les probiotiques de type Glandex sont à remplacer par des souches autorisées ou à supprimer (section 3).
 
