@@ -216,14 +216,13 @@ Les autres opérations 2025 concernent des jouets banalisés (Mammoth, cordes à
 ## 5. Graines à vérifier rapidement (sans présumer de leur pertinence)
 
 ### Takeaway
-Sur les 15 graines fournies :
-- **2 entrent dans le top 5** : Bow Wow Buddy (n°1) et Paw.com PupProtector (n°5, catégorie saturée en France) ;
+Bilan des 15 graines fournies :
+- **3 entrent dans le top 5** : Bow Wow Buddy (n°1), Cat Amazing (n°2) et Paw.com PupProtector (n°5, catégorie saturée en France) ;
 - **1 y entre par sa catégorie** : Mutt Muffs, versée dans le candidat « protection auditive » (n°4) ;
-- **Cat Amazing** devient le n°2 ;
-- **Paw Friction** n'a aucune preuve de ventes ;
+- **Paw Friction** a été recherchée, sans aucune preuve de ventes ;
 - **Shed Defender** est hors périmètre ;
-- **Doc & Phoebe's** et **Aquapaw** étaient déjà couverts ;
-- **6 graines** n'ont pas été recherchées faute de budget : Hepper, Fable, Soft Paws, Kitty Poo Club, PoochieBells, Pawz. Snoozer ne l'a pas été non plus. Elles sont écartées sur critères, avec la mention « non vérifié ».
+- **Doc & Phoebe's** et **Aquapaw** étaient déjà couverts au tour 1 ;
+- **7 graines** n'ont pas été recherchées faute de budget : Hepper, Fable, Soft Paws, Kitty Poo Club, PoochieBells, Pawz et Snoozer Lookout. Elles sont écartées sur critères, avec la mention « non vérifié ».
 
 ### Cited Findings
 - **Bow Wow Buddy** : voir sections 1, 3 et 6. Le passage à Shark Tank n'est pas confirmé (recherche n°2).
@@ -292,7 +291,7 @@ Les trois autres sont plus faibles :
   - CA ESTIMÉ (BrandSearch) d'environ 394 k$/mois, non daté ;
   - distribution chez Target, Walmart et des indépendants. Instantanés de stock : « Low stock: 2 left » chez Happy Hound, « sold out » chez Dr. Judy Morgan ([Dr. Judy Morgan](https://drjudymorgan.com/products/bow-wow-buddy-bully-stick-holder)).
 - **Catégorie validée par d'autres acteurs US** (synthèse du moteur) :
-  - **Woof « BullySafe Holder »**, environ 27 $ chez thehungrypooch.com, de la même marque que le Pupsicle, rachetée par The Farmer's Dog en 2026 ([The Hungry Pooch](https://thehungrypooch.com/product-tag/chew-holder/)) ;
+  - **Woof « BullySafe Holder »**, environ 27 $ chez thehungrypooch.com ([The Hungry Pooch](https://thehungrypooch.com/product-tag/chew-holder/)). Probablement la marque Woof du Pupsicle, rachetée par The Farmer's Dog en 2026, mais **l'extrait ne le confirme pas** ;
   - « Mighty Chewz » (boulon traversant et recharges de bâtons pré-percés) ;
   - « Bully Stick Companion » (attache de 4 pieds, chiens jusqu'à 30 lb) ;
   - « Bully Buddy » (pré-commandes BackerKit) ([BackerKit](https://bullybuddy.backerkit.com/hosted_preorders/project_updates?page=2)).
@@ -360,7 +359,7 @@ Les trois autres sont plus faibles :
 | # | Requête (verbatim) | Domaines | Résultat |
 |---|---|---|---|
 | FR-D1 | `Ruff Liners dog car seat cover` | amazon.fr, cdiscount.com, zooplus.fr | Ruff Liners présent mais indisponible ; nombreux génériques : [B0FSZ6XW42](https://www.amazon.fr/Protection-Voiture-Imperm%C3%A9able-Antid%C3%A9rapante-Universelle/dp/B0FSZ6XW42), [B0CW642WVR](https://www.amazon.fr/Protection-Banquette-Darri%C3%A8re-Empreintes-danimaux/dp/B0CW642WVR), [B0BF456CQQ](https://www.amazon.fr/Housses-Voiture-amovible-imperm%C3%A9able-compagnie/dp/B0BF456CQQ), [B07Y3C5VZW](https://www.amazon.fr/Banquette-Arri%C3%A8re-Protecteur-Voiture-Voitures/dp/B07Y3C5VZW), **extension à fond rigide générique** [B0DKNXHGQK](https://www.amazon.fr/voiture-extension-compagnie-protection-antid%C3%A9rapant/dp/B0DKNXHGQK), protège-coffre Rinling [B0CLLC4QYD](https://www.amazon.fr/Rinling-Protection-Couverture-Universelle-Rangement/dp/B0CLLC4QYD). Amazon.fr a une **catégorie Best Sellers « Dog Car Seat Covers »** ([lien](https://www.amazon.fr/-/en/gp/bestsellers/pet-supplies/2036692031/ref=zg_b_bs_2036692031_1/ref=pd_aw_subss_m_sccl_1_2_bsb/000-0000000-0000000?pd_rd_r=8a5cc1c6-5d05-4386-bd88-d98539d8f6fc&pd_rd_wg=1xVyO&pd_rd_w=MRDKu&pd_rd_i=B07S1NJBGW)). |
-| FR-D2 (réutilisée de FR-E4) | `plaid imperméable pour chien protection canapé marque française` | aucun | Protection voiture : Zolux « Plaid de protection pour chien » 130x110 cm chez Bricomarché ([lien](https://www.bricomarche.com/p/plaid-de-protection-pour-chien/3507614030203)), Kurgo Loft Wander chez La Compagnie des Animaux ([lien](https://www.lacompagniedesanimaux.com/kurgo-loft-wander-plaid-de-voyage-pour-chien-l.html)), Zooplus « Plaid de protection voiture 127 x 107 cm » ([lien](https://www.zooplus.fr/shop/chiens/9980010590)) et « auto réglable » ([lien](https://www.zooplus.fr/shop/chiens/9980007342)). |
+| FR-D2 (réutilisée de FR-B4) | `plaid imperméable pour chien protection canapé marque française` | aucun | Protection voiture : Zolux « Plaid de protection pour chien » 130x110 cm chez Bricomarché ([lien](https://www.bricomarche.com/p/plaid-de-protection-pour-chien/3507614030203)), Kurgo Loft Wander chez La Compagnie des Animaux ([lien](https://www.lacompagniedesanimaux.com/kurgo-loft-wander-plaid-de-voyage-pour-chien-l.html)), Zooplus « Plaid de protection voiture 127 x 107 cm » ([lien](https://www.zooplus.fr/shop/chiens/9980010590)) et « auto réglable » ([lien](https://www.zooplus.fr/shop/chiens/9980007342)). |
 
 - **Verdict provisoire : SATURÉ** pour la catégorie housses et hamacs de voiture. La sous-niche « fond rigide + portières » est en **concurrence moyenne** : au moins un générique, original indisponible.
 - Requêtes non lancées, faute de budget : `housse siège auto chien sur mesure`, `extension banquette chien fond rigide`, `protection coffre chien sur mesure`.
@@ -460,7 +459,7 @@ Jugement de l'auteur, sans coûts de revient collectés.
 - Risques :
   - responsabilité si le support cède ;
   - brevets Bow Wow Labs non vérifiés ;
-  - **Woof** (désormais The Farmer's Dog, Pupsicle déjà sur Amazon.fr selon le tour 1) vend aussi un BullySafe qui pourrait arriver en Europe. Hypothèse.
+  - si le « Woof BullySafe » vient bien de Woof (désormais The Farmer's Dog, Pupsicle déjà sur Amazon.fr selon le tour 1), ce support pourrait arriver en Europe. Hypothèse non vérifiée.
 
 **2. Cat Amazing**
 - (1) Succès US documenté : **moyen** (Shark Tank et CA déclaré HISTORIQUES ; 6 773 avis).
