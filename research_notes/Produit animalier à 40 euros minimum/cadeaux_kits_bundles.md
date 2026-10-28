@@ -45,7 +45,7 @@ Tous deux sont en **concurrence moyenne** en France.
 **Rejetés** :
 - **portrait personnalisé** (Crown & Paw, West & Willow) : **saturé** sur Etsy France et banalisé par l'IA ;
 - **pyjamas et plaids photo** : prix d'ancrage Etsy de 9,99 à 27,99 $ ;
-- **box mensuelle** : BARK recule de 25 %, et Woufbox et Miaoubox ont fermé en juillet 2024 ;
+- **box mensuelle** : BARK recule de 25 %, et Woufbox et Miaoubox ont annoncé la fin de leur activité en juillet 2024 ;
 - **box de friandises à mâcher** : aliment réglementé, concurrence forte.
 
 ### Cited Findings
@@ -59,7 +59,7 @@ Tous deux sont en **concurrence moyenne** en France.
 | 3 | **Kit d'arrivée chiot premium, grandes races** | Pupford (aucun kit trouvé) | n.r. | 79–99 € | FINANCEMENT de Pupford par Peterson Private Equity (24/02/2022, HISTORIQUE). CA ESTIMÉ (Grips) : 220 233 $ en mars 2024. **Aucune preuve sur un kit** | Assemblage de composants par le 3PL | Concurrence moyenne (2 requêtes) | **Top 3, conditionnel** |
 | 4 | Portrait personnalisé sur toile ou poster | Crown & Paw ; West & Willow | West & Willow : 77 $, barré 105 $ [tour 1] ; Crown & Paw : n.r. | 69–89 € | UNITÉS : 1 M+ portraits ; AVIS : 30 000+ 5★ (déclaré, n.d.). CA ESTIMÉ (Grips) : 171,9 k$ en 09/2024, −14 % sur 3 mois. CA ESTIMÉ (ZoomInfo) : < 5 M$ | Illustration (IA ou artiste) et impression à la demande | **Saturé** (2 requêtes et 1 partagée) | Rejeté |
 | 5 | Pyjama, sweat brodé ou plaid à capuche à l'effigie de l'animal | Cuddle Clones (ligne pyjamas) | « Jusqu'à −60 % » pendant la promotion du 17/10 au 01/12/2025 ; prix n.r. | 49–69 € | Aucun chiffre propre à la ligne, seulement la promotion | Impression textile à la demande ou broderie | Concurrence moyenne à forte via Etsy, de 9,99 à 27,99 $ (2 requêtes) | Rejeté |
-| 6 | Box mensuelle (jouets et friandises) | BARK (BarkBox) | n.r. | 25–35 € par mois | **CA DÉCLARÉ** au T4 FY2026 : 86,6 M$, −25 % ; ventes directes −26 % (SEC, 09/06/2026) [tour 1] | Achat de stock et sélection | Woufbox et Miaoubox fermées (07/2024) ; Vivadogs à 25 € par mois ; La Box Naturelle dès 30 € (1 requête) | Rejeté |
+| 6 | Box mensuelle (jouets et friandises) | BARK (BarkBox) | n.r. | 25–35 € par mois | **CA DÉCLARÉ** au T4 FY2026 : 86,6 M$, −25 % ; ventes directes −26 % (SEC, 09/06/2026) [tour 1] | Achat de stock et sélection | Fin d'activité annoncée par Woufbox et Miaoubox (07/2024) ; Vivadogs à 25 € par mois ; La Box Naturelle dès 30 € (1 requête) | Rejeté |
 | 7 | Box de friandises à mâcher naturelles (nerfs de bœuf) | Bow Wow Labs | Kits de 44,95 à 53,95 $ [tour 1] | 40–50 € | **CA DÉCLARÉ** de 6,01 M$ en 2023, perte nette de 1,22 M$ (Wefunder, HISTORIQUE) [tour 1] | Négoce de friandises de l'UE (sous-produits animaux, étiquetage 767/2009) | Concurrence forte : nerfs vendus partout [tour 1] | Rejeté |
 | 8 | Kit d'empreinte de patte (argile, encre) | Aucune marque US relevée | n.r. | 7–29 € constatés sur Amazon.fr | Aucune | Composants génériques | Saturé à bas prix (1 requête filtrée) | Rejeté seul ; composant du n° 2 |
 | 9 | Urne personnalisée seule | Funeral.com, Funeral Wise | 59–119,95 $ | 66–190 € constatés sur Kaufland.fr | Catalogue seulement | Usine (MOQ de 10 à 200) et gravure | Concurrence moyenne (1 requête) | Rejeté seul ; composant du n° 2 |
@@ -340,7 +340,7 @@ Principaux risques :
 **Idées rejetées (une ligne chacune)**
 - **Portrait personnalisé (toile, poster)** : saturé sur Etsy France (au moins 4 pages de marché, numérique à 8–20 €), banalisé par l'IA, et il faut environ 89 € TTC pour 40 € de contribution.
 - **Pyjama, sweat ou plaid photo** : prix d'ancrage Etsy de 9,99 à 27,99 $ ; Cuddle Clones déjà présent en français ; marge insuffisante à prix réaliste [H].
-- **Box mensuelle** : le leader US recule de 25 %, le leader français a fermé en juillet 2024, et la box est déficitaire au premier mois.
+- **Box mensuelle** : le leader US recule de 25 % ; Woufbox, la box française la plus citée, a annoncé la fin de son activité en juillet 2024 ; un premier mois à 21–29 € HT ne peut pas couvrir un CPA de 39,9 € [calc].
 - **Box de friandises à mâcher** : aliment (sous-produits animaux, règlement 767/2009), nerfs vendus partout, 6 € de contribution par recharge (étude précédente).
 - **Kit d'empreinte de patte seul** : 7–29 € sur Amazon.fr, sous le seuil de 40 €.
 - **Urne seule** : offre existante de 66 à 190 € (Kaufland.fr) et vente via les crématoriums [CP].
@@ -402,7 +402,7 @@ Principaux risques :
 | 18 | `cadeau perte animal décès chien coffret souvenir` | — | Catégorie « commémoration » de Zooplus.fr ; pages anglophones de faible qualité |
 | 19 | `kit arrivée chiot coffret complet` | — | Packs Wildfang chez Truffaut ; Groupon |
 | 20 | `puppy starter kit chiot set` | amazon.fr, cdiscount.com, zooplus.fr | Au moins 7 kits sur Amazon.fr ; Royal Canin et Savic sur Zooplus.fr ; rien sur Cdiscount |
-| 21 | `box mensuelle chien abonnement jouets friandises France` | — | Woufbox et Miaoubox fermées (07/2024) ; Vivadogs ; La Box Naturelle |
+| 21 | `box mensuelle chien abonnement jouets friandises France` | — | Fin d'activité annoncée par Woufbox et Miaoubox (07/2024) ; Vivadogs ; La Box Naturelle |
 | 22 | `Gelato canvas print price 30x40 cm base cost EUR print on demand` | — | Toile Gelato à 20,76 € plus 5,13 € de port (taille non précisée) |
 | 23 | `droit de rétractation produit personnalisé exception article L221-28 confectionné selon spécifications du consommateur` | — | Exception L. 221-28, 3° ; interprétation stricte ; obligation d'information |
 | 24 | `custom dog plush from photo replica stuffed animal` | amazon.fr, cdiscount.com, fnac.com, rakuten.fr | Coussins photo, porte-clés, peluches génériques ; aucun service de réplique |
@@ -534,8 +534,8 @@ Principaux risques :
 | Provision refabrication ou remboursement [H] : 5 % (12 % en pessimiste) de (fabrication + fret + port + 3PL) | 2,95 | 2,95 | 2,95 | 10,08 | 2,00 |
 | **Contribution avant publicité** | **40,22 (37 %)** | **56,41 (45 %)** | **72,59 (52 %)** | **24,28 (20 %)** | **76,36 (61 %)** |
 | Après un CPA de 39,9 € (P35) | +0,32 | **+16,51** | +32,69 | −15,62 | +36,46 |
-| Après un CPA de 47,9 € (micro-entreprise) | −7,68 | +8,51 | +24,69 | −23,62 | +28,46 |
 
+- Tous les tableaux supposent une **société assujettie à la TVA** (prix et coûts HT). Le cas de la micro-entreprise en franchise de TVA n'est pas modélisé : elle ne facture pas de TVA mais ne récupère pas celle de ses achats et de sa publicité (CPA effectif d'environ 47,9 € selon la première étude).
 - Si la livraison se fait à domicile (P14, 7,99 €) plutôt qu'en point relais : −3,00 € par commande.
 - **Options payantes** [H, sur le modèle de Cuddle Clones : pochette à cendres, fabrication express, coffret cadeau] : 10 à 20 € de contribution par commande en plus, si 30 à 50 % des clients les prennent. Taux non sourcé.
 - **Envoi direct de l'atelier au client** (sans stock en France) : 3 € de droit et 2 € de frais par article, soit 5 €. Il supprime le contrôle qualité et l'emballage de marque. **Déconseillé** [calc sur 2.4].
@@ -646,7 +646,7 @@ Principaux risques :
   - sélection Topito de cadeaux personnalisés, d'environ 19 € à plus de 100 € ([Topito](https://www.topito.com/top-shopping-cadeaux-personnalisables-animal)) ;
   - page de marché Etsy France « Peluche animaux de compagnie » ([Etsy FR](https://www.etsy.com/fr/market/peluche_animaux_de_compagnie)) ;
   - catégorie « commémoration / souvenir » de Zooplus.fr ([Zooplus.fr](https://www.zooplus.fr/shop/chats/accessoires_maison/commemoration_souvenir/9980051568)).
-- **Durabilité contraire des box** : BARK recule de 25 % au T4 FY2026 ([SEC](https://www.sec.gov/Archives/edgar/data/0001819574/000162828026041892/exhibit991-q4fy26pressrele.htm)) ; Woufbox et Miaoubox ont fermé en juillet 2024 ([touteslesbox.fr](https://touteslesbox.fr/la-miaoubox/), attribution probable).
+- **Durabilité contraire des box** : BARK recule de 25 % au T4 FY2026 ([SEC](https://www.sec.gov/Archives/edgar/data/0001819574/000162828026041892/exhibit991-q4fy26pressrele.htm)) ; Woufbox et Miaoubox ont annoncé la fin de leur activité en juillet 2024 ([touteslesbox.fr](https://touteslesbox.fr/la-miaoubox/), attribution probable).
 
 ### Inferences
 **Calendrier probable de la peluche en France** [H, transposé des signaux US] :
