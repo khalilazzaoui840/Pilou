@@ -298,7 +298,7 @@ Les numéros de requête renvoient au journal de la section 7. Les jugements de 
   - harnais en néoprène à deux poignées, lavable en machine ;
   - 5 tailles de XS à XL, plus une version mâle « U Band » ; la taille M couvre les chiens de 20 à 36 kg ;
   - poids non relevé ; léger et compact (inférence).
-  - Source : [Physioveto](https://www.physioveto.com/harnais-portage-chien-help-em-up-harness.html)
+  - Sources : synthèse du moteur sur les fiches de revendeurs français ; l'attribution exacte du tableau des tailles entre ces deux pages n'est pas certaine. — [Physioveto](https://www.physioveto.com/harnais-portage-chien-help-em-up-harness.html) ; [Zooplus.fr](https://www.zooplus.fr/shop/chiens/laisses_colliers_chien/petit_chien/9980069045)
 - **Électronique et réglementaire** : aucune électronique. Il faut éviter les allégations médicales (post-opératoire, rééducation) et parler d'« aide à la mobilité ». Le bon dimensionnement compte pour la sécurité de l'animal, et les retours pour erreur de taille sont un risque.
 - **Potentiel publicitaire** : fort (inférence).
   - Accroche : un grand chien âgé qui ne monte plus en voiture, puis qui y remonte soulevé sans effort.
@@ -324,7 +324,7 @@ Les numéros de requête renvoient au journal de la section 7. Les jugements de 
   - hauteur de 25 pouces (≈ 64 cm) ou 29 pouces (≈ 74 cm), base de 12 × 12 pouces (≈ 30 × 30 cm) ;
   - réservoir de 25–30 lb (≈ 11–14 kg) de croquettes ; bols de ½ à 3½ tasses ; levier à verrouillage automatique ;
   - poids non relevé ; **colis volumineux** (inférence) ; bois ou polymère.
-  - Sources : [Houndsy FAQ](https://www.houndsy.com/pages/faqs) ; [Houndsy (blog)](https://www.houndsy.com/blogs/modern-tails/how-to-measure-dry-dog-food-a-comprehensive-guide-for-pet-owners)
+  - Sources : fiche produit et FAQ Houndsy, via la synthèse du moteur ; l'attribution exacte de chaque mesure entre ces pages n'est pas certaine. — [Houndsy, fiche produit](https://www.houndsy.com/products/houndsy-kibble-dispenser-test) ; [Houndsy FAQ](https://www.houndsy.com/pages/faqs)
 - **Électronique et réglementaire** :
   - mécanique, sans électronique ;
   - matériaux au contact d'aliments pour animaux : cadre UE à vérifier ;
