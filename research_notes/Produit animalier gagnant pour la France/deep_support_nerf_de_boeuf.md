@@ -295,7 +295,7 @@ Le **risque d'étouffement et d'occlusion** est décrit dans des contenus franç
 - **Marques et origine** :
   - **Nutrivet Inne** est présentée comme « Fabrication française » ([Zoomalia](https://www.zoomalia.com/animalerie/nutrivet-inne-friandise-naturelle-nerfs-de-boeuf-pour-chien-p-156691.html)) ;
   - Bubimex, Vadigran ([Zoomalia](https://www.zoomalia.com/animalerie/vadigran-friandise-naturelle-nerfs-de-b-uf-p-70752.html)), Trixie, MultiFit (marque propre de Maxi Zoo), Dailys ;
-  - M'Gourmand, vendeur de Champagne-Ardenne ([comdewouf](https://comdewouf.fr/?p=11702), synthèse).
+  - M'Gourmand, vendeur de Champagne-Ardenne, qui propose des « bâtonnets à mâcher, composés à 100 % de nerfs de bœuf ». Source : synthèse de la requête n° 43, **URL exacte non attribuable**.
 - **Contexte de mastication de masse** : Action vend des « bâtonnets à mâcher pour chien » et des « friandises à mâcher pour chien » ([Action](https://www.action.com/fr-fr/p/2580366/friandises-a-macher-pour-chien/)).
 
 #### 2.2 Conscience du risque : contenus vétérinaires et médias français
@@ -489,7 +489,7 @@ Les requêtes FR-A1 à FR-A6 datent du tour précédent (`us_decouverte_marques_
 - **TVA** : 20 % sur les aliments pour animaux de compagnie (BOFiP, repris de `fr_costs_regulation.md`).
 - **Fournisseurs de nerfs : pistes trouvées** (aucun grossiste en marque blanche identifié dans l'UE) :
   - **en France ou dans l'UE, marques à revendre telles quelles** : Trixie (Allemagne), Bubimex (France), Nutrivet Inne (fabrication française), Vadigran (Belgique), Dailys, MultiFit (marque propre de Maxi Zoo, non revendable) ;
-  - **intermédiaire** : Zoomici, qui « négocie directement avec les grossistes » européens, vendeur sur Zooplus ([comdewouf, synthèse](https://comdewouf.fr/?p=11702)) ;
+  - **intermédiaire** : Zoomici, vendeur d'une fiche de nerfs de bœuf sur Zooplus, qui écrit « Nous négocions directement avec les grossistes » européens. Fiche probable : [Zooplus, « Nerfs de bœuf 8 pièces »](https://www.zooplus.fr/shop/chiens/friandises_chien/friandises_chien_boeuf/9980003822), attribution incertaine ;
   - **guide** : comdewouf.fr, mis à jour en mai 2026, sur les grossistes et la marque blanche, surtout pour les croquettes ([comdewouf](https://comdewouf.fr/?p=11702)) ;
   - **hors UE** : un exportateur britannique sur Freshdi (MOQ de **5 tonnes**) ([Freshdi](https://freshdi.com/product/Hot-Selling-Braided-Bully-Stick-Pizzle-Natural-Intestine-Carved-EcoFriendly-Dog-)) ; **Bully Bundles** (Chicago), vente en gros et « private label packaging » ([Pets+](https://petsplusmag.com/bully-bundles-release-new-wholesale-website/)) ; marques sur Faire : Chewer's Joy, Jojo Modern Pets, Mighty Paw, avec des origines en Thaïlande, aux USA et au Royaume-Uni (pizzle « grass-fed » britannique) ([Faire](https://www.faire.com/en-gb/product/p_arf8ffafaq)).
 
