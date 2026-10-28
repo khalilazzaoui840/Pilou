@@ -38,9 +38,9 @@ _Méthode et limites (valables pour tout le document) :_
   - **Bac Modkat : déjà distribué.** La vérification laissée ouverte au premier tour est faite : Zooplus.fr le vend environ 92 € et le XL 151,99 €.
   - **Perchoirs de fenêtre : saturés**, de 15 à 80 € chez Cdiscount.
   - **Sleepypod** est présent sur Amazon.fr.
-  - **Griffoirs-lounges premium : concurrence moyenne.** PetFusion est listé mais indisponible sur Amazon.fr, et des marques françaises de griffoirs « rechargeables » existent déjà (Homycat, Pet-Design).
+  - **Griffoirs-lounges premium : concurrence moyenne.** PetFusion est listé mais indisponible sur Amazon.fr, et des marques françaises de griffoirs en carton existent déjà, dont une à recharges (Homycat) et Pet-Design.
 - **Le moins exploité : la tente-enclos pop-up, ou « catio nomade ».** Elle est en **concurrence moyenne** :
-  - au moins 20 annonces génériques sur Amazon.fr, de 51 à 140 € ;
+  - au moins 17 annonces génériques distinctes sur Amazon.fr, de 51 à 140 € ;
   - aucune marque française de pop-up trouvée ;
   - Kittywalk, la marque US historique, n'y a qu'une fiche indisponible et une fiche notée 3,9/5 sur 37 avis.
 - **Classement relatif** (détail dans les Inferences) :
@@ -172,7 +172,7 @@ Requêtes lancées le 2026-10-28 :
 | 12 | `enclos parc pour chat extérieur` | zooplus.fr, maxizoo.fr, wanimo.com, zoomalia.com, animalis.com, truffaut.com, cdiscount.com, jardiland.com, botanic.com | noms français | Catios fixes : Zoomalia (marque propre Laurel et Hardy, environ 170 €), Jardiland (Catpark, Cémonjardin), Cdiscount (Wiltec jusqu'à 280 × 188 × 188 cm). Fourchette d'environ 170 € à plus de 500 €. **Aucune tente pop-up remontée chez ces enseignes** dans ce criblage |
 | 16 | `catio chat appartement tente extérieur sécurité balcon jardin sortir son chat` | web ouvert, hors amazon.fr, amazon.com, cdiscount.com, zooplus.fr, zoomalia.com, ebay.fr | problème et terme « catio » | Guides et boutiques françaises : astucechat.com, Animal Valley, techanimaux.fr, cocondedecoration.com (mai 2025), Feliway.fr, petwizz.fr (« top 5 catios 2026 »), protection-pour-chats.fr (catios sur mesure), felin-zen.com (catio sans percer) |
 | 20 | `tente pour chat extérieur enclos portable boutique en ligne` | web ouvert, hors amazon.fr, amazon.com, cdiscount.com, zooplus.fr, zoomalia.com, ebay.fr, aliexpress.com, temu.com | noms français, boutiques | Surtout Amazon.ca, eBay et Walmart. **Leroy Merlin** a une rubrique « Tente chat » de vendeurs tiers : enclos portable avec tunnel à environ 63,86 €, modèles à 21–25 €. **Aucune boutique française de marque spécialisée dans le pop-up** dans ce criblage |
-| 21 | `Kittywalk outdoor cat enclosure tent` | amazon.fr, cdiscount.com, zooplus.fr, maxizoo.fr, wanimo.com, animalis.com, truffaut.com, jardiland.com, leroymerlin.fr, manomano.fr | nom anglais | Kittywalk Teepee TTF **indisponible** ; Kittywalk Penthouse à 3,9/5 sur 37. Au moins 9 génériques de plus : DiDiBirDi, GINDOOR, Biigdan (100 × 52 × 73 cm), ITENT, etc. |
+| 21 | `Kittywalk outdoor cat enclosure tent` | amazon.fr, cdiscount.com, zooplus.fr, maxizoo.fr, wanimo.com, animalis.com, truffaut.com, jardiland.com, leroymerlin.fr, manomano.fr | nom anglais | Kittywalk Teepee TTF **indisponible** ; Kittywalk Penthouse à 3,9/5 sur 37. Plus 8 fiches génériques, dont 7 non vues à la requête n° 11 : Biigdan (100 × 52 × 73 cm), ITENT, etc. Marques citées par le moteur : DiDiBirDi, GINDOOR |
 | 22 | `chat d'appartement profiter de l'extérieur en sécurité enclos jardin balcon` | wamiz.com, woopets.fr, 30millionsdamis.fr, santevet.com, zooplus.fr, maxizoo.fr | problème formulé par les propriétaires | Magazines Zooplus (3 articles), Maxi Zoo (2), Wamiz (article et forums), Woopets, Santévet. Voir §1.4 |
 | 29 | `Omlet catio enclos chat arbre à chat prix` | omlet.fr | concurrent haut de gamme | Omlet vend des catios fixes de 529 à 1 239 € et des enclos de balcon de 539 à 739 € (détail ci-dessous) |
 
@@ -365,7 +365,7 @@ Concurrents relevés :
 #### Verdicts France (synthèse)
 | Candidat | Verdict | Motif principal |
 |---|---|---|
-| A. Tente-enclos pop-up | **Concurrence moyenne** | Génériques nombreux sur Amazon.fr (51 à 140 €) ; aucune marque, ni française ni US active (Kittywalk quasi absent) ; le haut de gamme fixe (Omlet, Zoomalia) est un autre segment |
+| A. Tente-enclos pop-up | **Concurrence moyenne** | Au moins 17 génériques distincts sur Amazon.fr (51 à 140 €) ; aucune marque française ; marque US historique peu présente (Kittywalk : une fiche indisponible, une fiche à 37 avis) ; le haut de gamme fixe (Omlet, Zoomalia) est un autre segment |
 | B. Parcours mural | **Saturé** | 1 195 offres Cdiscount ; catégories dédiées partout ; marques propres d'enseignes ; au moins 4 fabricants français ; FUKUMARU déjà sur Zooplus.fr |
 | C. Griffoir-lounge carton premium | **Concurrence moyenne** (criblage partiel) | Haut de gamme français déjà présent, avec un modèle à recharges (Homycat) ; PetFusion indisponible |
 | D. Bac design à entrée par le dessus | **Concurrence moyenne ; original déjà distribué** | Modkat chez Zooplus.fr (environ 92 € et 151,99 €) et sur Amazon.fr |
@@ -448,7 +448,7 @@ Aucun candidat ne coche tous les critères. Le classement pèse dans cet ordre :
 
 - **Le facteur décisif est le colis.** Ces produits pèsent de 2 à 9 kg et occupent de 0,01 à 0,07 m³. Ils coûtent donc de 6,66 à 14,50 € HT d'envoi en point relais, contre 3,46 à 4,99 € pour un colis de 1 kg au plus. Ils alourdissent aussi le fret, le stockage et le coût des retours.
 - **Le coût produit n'est pas le problème.** Les prix B2B sont bas : de 4 à 25 $ pour une tente avec tunnel, de 2 à 20 $ pour des étagères, de 1 à 8 $ pour un lounge en carton.
-- **Seule la tente pop-up très compacte** (pliée en un disque de 2 kg au plus) approche 40 € de contribution à un prix réaliste (79,90 € TTC : 42,55 € en central [calc]). C'est encore au-dessus des génériques 2-en-1 d'Amazon.fr (57 à 96 €).
+- **Seule la tente pop-up très compacte** (pliée en un disque de 2 kg au plus) approche 40 € de contribution sous 80 € (79,90 € TTC : 42,55 € en central [calc]). Mais c'est cher pour une tente seule : les génériques comparables coûtent de 21 à 25 € (Leroy Merlin) ou 50,99 € (Ownpets), et les 2-en-1 avec tunnel de 57 à 96 € sur Amazon.fr.
 
 ### Cited Findings
 
