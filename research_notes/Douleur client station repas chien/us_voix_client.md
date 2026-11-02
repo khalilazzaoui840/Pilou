@@ -17,7 +17,7 @@ Conventions de lecture (ce ne sont pas des constats) :
   - [H] : hypothèse ;
   - [calc] : calcul.
 - **Attribution** : la synthèse ne rattache pas toujours un extrait à un lien précis. Dans ce cas, l'URL donnée est le candidat le plus probable parmi les résultats, avec la mention « attribution incertaine ».
-- **Dates** : date de la source quand le moteur l'affiche, sinon « n.d. ». Date d'observation : 02/11/2026.
+- **Dates** : date de la source quand le moteur l'affiche, sinon « n.d. ». **Toute source citée sans date est n.d.** Date d'observation : 02/11/2026.
 - **Comptages [calc]** : nombre de sources américaines distinctes où le thème apparaît, parmi les résultats des 22 requêtes. O = voix de propriétaire, E = article ou contenu commercial.
   - Un même avis reproduit sur plusieurs domaines desertcart compte une fois.
   - **Ce n'est pas un échantillon représentatif** : les requêtes visaient ces thèmes.
@@ -61,8 +61,8 @@ Suivent **les dégâts au sol** (parquet, stratifié : 3 O) et **la corvée de n
 - [VERBATIM] Titre de fil, chow-chow : « Help.... Wet bib and neck » — [forum.chowchow.org](https://forum.chowchow.org/viewtopic.php?p=213521), n.d. (extrait moteur, contenu non lu)
 - [VERBATIM ?] Caniche royal, après achat du Neater : « she still gets drops of water on the floor here and there from her mouth after a drink, but the difference is noticeable and obvious ». Source : résultats de V17, page non identifiée (candidats : [ShopSavvy](https://shopsavvy.com/reviews-tldr/neater-feeder-deluxe-for-large-dogs), [desertcart CY](https://www.desertcart.com.cy/products/75497079)), attribution incertaine, n.d. (extrait moteur)
 - Reformulation moteur (V22), attribution incertaine : un autre acheteur du Neater dit que son chien laisse encore une traînée d'eau après avoir bu, même si l'essentiel de l'eau s'écoule dans la station.
-- [ARTICLE] « Additionally, the breed's long fur can soak up water, leading to drips and trails across the floor. » — [iHeartDogs, races qui boivent le plus salement](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits), n.d. (extrait moteur)
-- [ARTICLE] Selon la même série d'articles, certains chiens boivent si goulûment que leur barbe goutte en permanence et laisse des traînées au sol (reformulation moteur, V14).
+- [ARTICLE] « Additionally, the breed's long fur can soak up water, leading to drips and trails across the floor. » — [iHeartDogs, races qui boivent le plus salement](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits), attribution probable, n.d. (extrait moteur)
+- [ARTICLE] Un article des résultats de V14 note que certains chiens boivent si goulûment que leur barbe goutte en permanence et laisse des traînées au sol (reformulation moteur ; attribution incertaine entre iHeartDogs, Dogster et Hepper).
 
 **Thème B — Eau projetée ou renversée autour de la gamelle**
 - [VERBATIM] Titre de fil : « My dog always makes a mess with her water bowl. Ideas to stop the mess? » — [Canine Journal, forum](https://www.caninejournal.com/forums/topic/my-dog-always-makes-a-mess-with-her-water-bowl-ideas-to-stop-the-mess/), n.d. (extrait moteur)
@@ -168,7 +168,7 @@ Chutes, moisissure, fourmis et chaussettes mouillées ne sont pas documentées p
 - **Fourmis** : seulement des blogs, dont celui de Houndsy, qui vend des distributeurs.
 - **Chaussettes mouillées** : aucune occurrence.
 - **Santé du chien (nuance)** : [ARTICLE] « megaesophagus is a condition where the esophagus enlarges, making it difficult for food and water to pass down to the stomach. This can lead to regurgitation, often immediately after drinking. » — [Dogster](https://www.dogster.com/dog-health-care/why-dogs-throw-up-after-drinking-water/), attribution probable, n.d. (extrait moteur). Un chien qui rejette l'eau n'est pas un simple buveur maladroit.
-- **Mécanique** : [ARTICLE] un article de Chewy cite une étude de Virginia Tech : boire est pour le chien « quite an interesting and complicated feat ». Le dégât est donc un sous-produit mécanique du lapement. Source : [Chewy Education](https://www.chewy.com/education/dog/general/behavior-pet-facts-a-scientific-look-at-how-dogs-drink-water), n.d. (extrait moteur). L'étude elle-même n'a pas été vue, d'où l'absence d'étiquette [ÉTUDE].
+- **Mécanique** : [ARTICLE] un article de Chewy cite une étude de Virginia Tech : boire est pour le chien « quite an interesting and complicated feat ». Le moteur en conclut que le dégât est un sous-produit mécanique du lapement, pas de la négligence (interprétation du moteur, à traiter comme [H]). Source : [Chewy Education](https://www.chewy.com/education/dog/general/behavior-pet-facts-a-scientific-look-at-how-dogs-drink-water), n.d. (extrait moteur). L'étude elle-même n'a pas été vue, d'où l'absence d'étiquette [ÉTUDE].
 
 **Argent dépensé**
 - **Station Neater** :
@@ -224,7 +224,7 @@ Le pire foyer combine un tel chien et **un sol en bois ou en stratifié**.
 |---|---|---|
 | Terre-neuve de 130 lb (≈ 59 kg [calc]) | Avis Amazon : le bac de récupération est cité comme meilleure fonction, et une station à bac réduit le dégât au sol (reformulation moteur, V14) | Note interne ([desertcart TH](https://www.desertcart.co.th/products/147451885-neater-feeder-deluxe-mess-proof-dog-bowls-elevated-for-large)) ; [desertcart CY](https://www.desertcart.com.cy/products/75497079), attribution incertaine |
 | Terre-neuve (bave) | [ARTICLE] Classé parmi les 10 races qui bavent le plus (reformulation moteur) | [Hepper](https://www.hepper.com/how-much-do-newfoundland-dogs-drool/), attribution incertaine avec Dogster |
-| Mastiff | [ARTICLE] « Their large mouths can displace a significant amount of water, and their loose, hanging skin around the mouth holds onto water until it's inevitably released onto the floor. The sheer volume of water a Mastiff can consume in one go also contributes to the mess. » (extrait moteur) | [iHeartDogs](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits), n.d. |
+| Mastiff | [ARTICLE] « Their large mouths can displace a significant amount of water, and their loose, hanging skin around the mouth holds onto water until it's inevitably released onto the floor. The sheer volume of water a Mastiff can consume in one go also contributes to the mess. » (extrait moteur) | [iHeartDogs](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits), attribution probable, n.d. |
 | Dogue allemand | [ARTICLE] Une propriétaire dresse ses chiens à s'essuyer la gueule (reformulation) | [AOL](https://www.aol.com/woman-shares-genius-trick-she-155759716.html) ; [Yahoo UK](https://uk.news.yahoo.com/great-dane-learns-wipe-mouth-123817845.html) |
 | Braque de Weimar (babines) | [VERBATIM ?] « contains all of his water mess » | [desertcart AR](https://www.desertcart.com.ar/products/7723846), attribution probable |
 | Labradors « qui bavent » | Reformulation moteur (V22) : l'eau reste hors du sol avec le Neater | Attribution incertaine |
@@ -275,7 +275,7 @@ L'ordre des essais est typique : **serviette, puis tapis, puis gamelle surélev�
 | Essuyer le chien, ou lui apprendre à s'essuyer | Contraignant : [VERBATIM] « I had to jump up everytime he took a sip and dry his face with a towel. » ; fonctionne pour certains (briard, dogues allemands) | [Dog Trick Academy](https://www.dogtrickacademy.com/forum/threads/drinking-manners-dry-your-beard.3693/latest) ; [AOL](https://www.aol.com/woman-shares-genius-trick-she-155759716.html) |
 | Couper la barbe | Solution de toilettage, à refaire régulièrement (reformulation) | [Doodle Doods](https://doodledoods.com/trim-doodle-beard/) |
 | Déplacer la gamelle (carrelage, dehors) | Contrainte d'emplacement : le parquet reste interdit (Houzz) ; « pourquoi pas dehors ? » (r/AlaskanMalamute, reformulation) | [Houzz](https://www.houzz.com/discussions/5306356/dog-vs-hardwood) ; [r/AlaskanMalamute](https://reddit.birdcat.cafe/r/AlaskanMalamute/comments/1mclaun/best_solution_for_messy_drinkers) |
-| Gamelle lourde et large, remplie à moitié, piscine pour enfants | [ARTICLE] « Mastiff owners might find that using very large, heavy water bowls that are harder to tip or splash over, combined with a regular towel-down after drinking, can keep the aftermath to a minimum. » ; Houndsy (commercial) conseille de remplir à moitié et de proposer une piscine pour se rafraîchir (reformulations) | [iHeartDogs](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits) ; [Houndsy](https://www.houndsy.com/blogs/modern-tails/how-to-stop-your-dog-from-dripping-water-from-their-bowl-effective-solutions-for-a-mess-free-home) |
+| Gamelle lourde et large, remplie à moitié, piscine pour enfants | [ARTICLE] « Mastiff owners might find that using very large, heavy water bowls that are harder to tip or splash over, combined with a regular towel-down after drinking, can keep the aftermath to a minimum. » ; Houndsy (commercial) conseille de remplir à moitié et de proposer une piscine pour se rafraîchir (reformulations) | [iHeartDogs](https://iheartdogs.com/dog-breeds-with-the-messiest-drinking-habits), attribution probable ; [Houndsy](https://www.houndsy.com/blogs/modern-tails/how-to-stop-your-dog-from-dripping-water-from-their-bowl-effective-solutions-for-a-mess-free-home) |
 
 **Ce que recommandent les comparatifs [ARTICLE]**
 - Bustle place le Neater Feeder en meilleur choix global pour les chiens qui boivent salement, dans une liste revue par un dresseur : solide, quatre tailles, mais cher (reformulation) — [Bustle](https://www.bustle.com/life/dog-water-bowl-for-messy-drinkers), n.d.
@@ -350,7 +350,8 @@ Les reproches portent moins sur l'efficacité que sur **les limites physiques** 
 - [AVIS] Chewy : stabilité jugée positive à 89 %, nettoyage à 91 % (1 793 avis, [dp/46116](https://www.chewy.com/neater-pets-neater-feeder-deluxe/dp/46116)).
 - Durée de vie : un ancien modèle paraît encore neuf après presque neuf ans (reformulation, V1).
 - Fakespot : « super easy to clean and assemble » ([lien](https://www.fakespot.com/product/neater-feeder-dog-bowl-5e595cf0-0c92-4a68-8556-5ea11edafd56), résumé d'avis par IA, n.d.).
-- Produit ancien et mature : revues de 2011 ([OnMilwaukee, 16/07/2011](https://onmilwaukee.com/articles/omcrecommends071611) ; [DoggyMom, 22/04/2011](https://doggymom.com/2011/04/22/the-neater-feeder/)). Les blogs de 2012–2013 (Thundering Pack, BSC Kids, Down South Savings) ont parfois reçu le produit gratuitement, selon la synthèse du moteur (V1).
+- Produit ancien et mature : revues de 2011 ([OnMilwaukee, 16/07/2011](https://onmilwaukee.com/articles/omcrecommends071611) ; [DoggyMom, 22/04/2011](https://doggymom.com/2011/04/22/the-neater-feeder/)), puis blogs datés par leur URL : Thundering Pack (03/2012), BSC Kids (04/2012), Down South Savings (09/2013).
+- Biais possible des revues : au moins un blogueur a reçu le produit gratuitement contre une revue (V1, blogueur non identifié). Quelques avis viennent de programmes d'échantillons déclarés (V22).
 
 ### Inferences
 - [H] **Cahier des charges** d'une version française tiré de ces reproches :
