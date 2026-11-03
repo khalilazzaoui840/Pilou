@@ -93,7 +93,14 @@ async function photoFrame(w, h, label) {
   const buf = await sharp(Buffer.from(svg)).png().toBuffer();
   return "image/png;base64," + buf.toString("base64");
 }
+const ILL = require("./illustrations.js");
+const SCENE = { "Photo titre": "liftoff", "Photo contexte": "onPad", "Photo valeur": "dragonIss", "Photo conclusion": "landing" };
 async function addPhoto(slide, x, y, w, h, label, name) {
+  if (SCENE[name]) {
+    const buf = await ILL.render(SCENE[name], w, h);
+    slide.addImage({ data: "image/png;base64," + buf.toString("base64"), x, y, w, h, altText: "Illustration : " + label, objectName: name });
+    return;
+  }
   slide.addImage({ data: await photoFrame(w, h, label), x, y, w, h, altText: "Photo : " + label, objectName: name || "Photo" });
 }
 
@@ -502,8 +509,8 @@ const sep = (t) => t.join("  ·  ");
       "NASA (2014). Commercial Orbital Transportation Services: A New Era in Spaceflight. NASA/SP-2014-617.",
       "FAA – Office of Commercial Space Transportation : faa.gov/space",
     ]);
-    list(M + colW + 0.5, 4.7, 1.6, "CRÉDITS PHOTOS", [
-      "Photos : SpaceX / NASA – à compléter selon les images insérées (licence indiquée sur Wikimedia Commons).",
+    list(M + colW + 0.5, 4.7, 1.6, "ILLUSTRATIONS", [
+      "Illustrations vectorielles originales réalisées pour cet exposé (Falcon 9, capsule Dragon, atterrissage du premier étage).",
     ]);
     s.addNotes("Diapositive de références : non commentée à l'oral.");
   }
